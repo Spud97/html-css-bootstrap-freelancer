@@ -1,3 +1,7 @@
+.mydebug {
+    border: 1px dashed red;
+}
+
 .bg_darkblue {
     background-color: #2c3e50;
 }
