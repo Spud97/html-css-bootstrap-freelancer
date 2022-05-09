@@ -19,12 +19,13 @@
   </head>
   <body>
     <nav class="fixed-top bg_darkblue">
-      <div class="mydebug container d-flex justify-content-between p-0">
+      <div class="container d-flex justify-content-between p-0">
         <div
           class="d-flex text-white align-items-center justify-content-between col py-3"
         >
           <div class="fw-bold fs-4 text-uppercase">Start Bootstrap</div>
-          <div>
+          <div class="d-sm-none border_white px-2 rounded"><i class="fa-solid fa-bars text-white"></i></div>
+          <div class="d-none d-sm-inline-block">
             <ul class="nav ms-auto">
               <li class="nav-item">
                 <a
@@ -52,7 +53,7 @@
     <main>
       <!-- START BOOTSTRAP -->
       <section class="bg_green py-5 mt-5">
-        <div class="mydebug container text-center text-white">
+        <div class="container text-center text-white">
           <div class="py-3">
             <img style="height: 200px" src="img/avatar.svg" alt="" />
           </div>
@@ -75,8 +76,8 @@
       </section>
       <!-- PORTFOLIO -->
       <section class="py-5">
-        <div class="mydebug container pt-3 pb-3">
-          <div class="mydebug py-1 text-center">
+        <div class="container pt-3 pb-3">
+          <div class="py-1 text-center">
             <h2 class="page-title">PORTFOLIO</h2>
             <div class="row mb-3">
               <div class="col-lg-3 col-md-5 mx-auto">
@@ -92,23 +93,23 @@
               </div>
             </div>
           </div>
-          <div class="row row-cols-3">
-            <div class="mydebug col p-3">
+          <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">
+            <div class="col p-3">
               <img src="img/cabin.png" class="img-fluid my-rounded" alt="" />
             </div>
-            <div class="mydebug col p-3">
+            <div class="col p-3">
               <img src="img/cake.png" class="img-fluid my-rounded" alt="" />
             </div>
-            <div class="mydebug col p-3">
+            <div class="col p-3">
               <img src="img/circus.png" class="img-fluid my-rounded" alt="" />
             </div>
-            <div class="mydebug col p-3">
+            <div class="col p-3">
               <img src="img/game.png" class="img-fluid my-rounded" alt="" />
             </div>
-            <div class="mydebug col p-3">
+            <div class="col p-3">
               <img src="img/safe.png" class="img-fluid my-rounded" alt="" />
             </div>
-            <div class="mydebug col p-3">
+            <div class="col p-3">
               <img
                 src="img/submarine.png"
                 class="img-fluid my-rounded"
@@ -120,9 +121,9 @@
       </section>
       <!-- ABOUT -->
       <section class="bg_green pt-3">
-        <div class="mydebug container py-5">
+        <div class="container py-5">
           <div class="row">
-            <div class="mydebug col-12 p-0 text-center text-white">
+            <div class="col-12 p-0 text-center text-white">
               <h2 class="page-title">ABOUT</h2>
               <div class="row mb-2">
                 <div class="col-lg-3 col-md-5 mx-auto">
@@ -139,7 +140,7 @@
               </div>
             </div>
             <div class="col-2"></div>
-            <div class="mydebug col-4 py-2 text-white">
+            <div class="col-8 col-sm-4 py-2 text-white">
               <p>
                 Freelancer is a free bootstrap theme created by Start Bootstrap.
                 The download includes the complete source files including HTML,
@@ -147,7 +148,9 @@
                 easy customization.
               </p>
             </div>
-            <div class="mydebug col-4 py-2 text-white">
+            <div class="col-2 d-sm-none"></div>
+            <div class="col-2 d-sm-none"></div>
+            <div class="col-8 col-sm-4 py-2 text-white">
               <p>
                 Whether you're a student looking to showcase you work, a
                 professional looking to attract clients, or a graphic artist
@@ -155,7 +158,7 @@
                 starting point!
               </p>
             </div>
-            <div class="mydebug col-12 text-center">
+            <div class="col-12 text-center">
               <a class="btn btn-outline-light mx-auto"
                 ><i class="fa-solid fa-download p"></i>Download</a
               >
@@ -165,9 +168,10 @@
       </section>
       <!-- CONTACT ME -->
       <section class="py-5">
-        <div class="mydebug container py-5">
-          <div class="row row-cols-1">
-            <div class="mydebug col py-3 text-center">
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 py-3 text-center">
               <h2 class="page-title">CONTACT ME</h2>
               <div class="row mb-3">
                 <div class="col-lg-3 col-md-5 mx-auto">
@@ -183,41 +187,67 @@
                 </div>
               </div>
             </div>
-            <div class="mydebug col py-3">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-8 py-3">
+              <div class="form-floating border-bottom">
+                <input type="text" class="form-control border-none" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Name</label>
               </div>
-              <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="form-floating border-bottom">
+                <input type="email" class="form-control border-none" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email Address</label>
               </div>
-              <div class="form-floating">
-                <input type="tel" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="form-floating border-bottom">
+                <input type="tel" class="form-control border-none" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Phone Number</label>
               </div>
-              <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <div class="form-floating border-bottom">
+                <textarea class="form-control border-none" id="textArea" rows="9"></textarea>
                 <label for="floatingInput">Message</label>
               </div>
-              <div class="btn btn-primary">Send</div>
+              <div class="btn bg_green text-white mt-3">Send</div>
             </div>
           </div>
         </div>
       </section>
       <!-- FOOTER -->
       <footer>
-        <section class="bg_blue py-4">
-          <div class="mydebug container py-4">
-            <div class="row row-cols-3">
-              <div class="mydebug col py-3"></div>
-              <div class="mydebug col py-3"></div>
-              <div class="mydebug col py-3"></div>
+        <section class="bg_blue pt-4">
+          <div class="container py-2">
+            <div class="row row-cols-sm-3 row-cols-1">
+              <div class="col py-3 px-5 text-center">
+                <h4 class="text-white">LOCATION</h4>
+                <p class="text-white">2215 John Daniel Drive Clark, MO 54243</p>
+              </div>
+              <div class="col py-3 px-5 text-center">
+                <h4 class="text-white">AROUND THE WEB</h4>
+                <div class="d-flex justify-content-evenly">
+                  <div class="btn border_white rounded-circle">
+                    <i class="fa-brands fa-facebook-f text-white"></i>
+                  </div>
+                  <div class="btn border_white rounded-circle">
+                    <i class="fa-brands fa-google-plus-g text-white"></i>
+                  </div>
+                  <div class="btn border_white rounded-circle">
+                    <i class="fa-brands fa-twitter text-white"></i>
+                  </div>
+                  <div class="btn border_white rounded-circle">
+                    <i class="fa-brands fa-linkedin-in text-white"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col py-3 px-5 text-center">
+                <h4 class="text-white">ABOUT FREELANCER</h4>
+                <p class="text-white">Freelance is a free to use, open source Bootstrap theme created by <a href="">Start Bootstrap</a>.</p>
+              </div>
             </div>
           </div>
         </section>
         <section class="bg_darkblue py-3">
-          <div class="mydebug container py-3"></div>
+          <div class="container py-3 text-center">
+            <span class="text-white fs-6">Copyright Your Website 2019</span>
+          </div>
         </section>
       </footer>
     </main>
