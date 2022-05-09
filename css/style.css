@@ -13,3 +13,7 @@
 .bg_green {
     background-color: #1abc9c;
 }
+
+.my-rounded {
+    border-radius: 10px;
+}
